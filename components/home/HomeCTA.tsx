@@ -3,11 +3,11 @@ import { BounceIn, FadeUp } from '@/components/common';
 export function HomeCTA() {
   return (
     <section className="bg-white py-12">
-      <div className="site-width rounded-3xl bg-white py-20 md:py-32">
-        <div className="text-center">
+      <div className="site-width bg-primary rounded-3xl text-white">
+        <div className="flex h-120 items-center justify-between px-20">
           <div>
             <BounceIn transition={{ delay: 0.2 }}>
-              <p className="bg-primary/10 text-primary inline-block rounded-full px-4 py-1.5 text-sm">
+              <p className="inline-block rounded-full bg-white/10 px-4 py-1.5 text-sm">
                 Your Next Website
               </p>
             </BounceIn>
@@ -31,7 +31,7 @@ export function HomeCTA() {
             <BounceIn transition={{ delay: 1.0 }}>
               <button
                 type="button"
-                className="bg-primary mt-6 rounded-md px-12 py-2.5 font-semibold text-white md:mt-8"
+                className="text-primary mt-6 cursor-pointer rounded-md bg-white/95 px-12 py-2.5 font-semibold md:mt-8"
               >
                 문의하기
               </button>
