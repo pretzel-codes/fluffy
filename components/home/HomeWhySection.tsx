@@ -84,7 +84,7 @@ export function HomeWhySection() {
                 </div>
 
                 <BounceIn transition={{ delay: 0.2 }}>
-                  <p className="bg-secondary/10 text-primary -ml-1 inline-block rounded-full px-3 pt-1.5 pb-1 text-[10px] uppercase md:text-xs">
+                  <p className="bg-secondary/10 text-primary label -ml-1 inline-block rounded-full px-3 pt-1.5 pb-1 uppercase">
                     {label}
                   </p>
                 </BounceIn>

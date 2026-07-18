@@ -1,4 +1,8 @@
 @layer utilities {
+    .label {
+        @apply text-[10px] md:text-xs;
+    }
+
     .section-title {
         @apply text-2xl font-bold md:text-5xl md:leading-16;
     }
