@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { BounceIn, FadeUp } from '@/components/common';
 
 const whyCards = [
   {
@@ -44,17 +45,22 @@ export function HomeWhySection() {
 
       <div className="site-width">
         <div>
-          <h2 className="section-title uppercase">Why Fluffy?</h2>
-          <div className="section-description mt-4 space-y-3 md:mt-6">
-            <p>
-              단순히 보기 좋은 디자인이 아닌, <br />
-              병원이 직접 운영하고 성장시킬 수 있는 홈페이지를 만듭니다.
-            </p>
-            <p>
-              제작 이후가 더 중요한 홈페이지. <br />
-              그것이 플러피가 생각하는 웹사이트입니다.
-            </p>
-          </div>
+          <FadeUp>
+            <h2 className="section-title uppercase">Why Fluffy?</h2>
+          </FadeUp>
+
+          <FadeUp transition={{ delay: 0.2 }}>
+            <div className="section-description mt-4 space-y-3 md:mt-6">
+              <p>
+                단순히 보기 좋은 디자인이 아닌, <br />
+                병원이 직접 운영하고 성장시킬 수 있는 홈페이지를 만듭니다.
+              </p>
+              <p>
+                제작 이후가 더 중요한 홈페이지. <br />
+                그것이 플러피가 생각하는 웹사이트입니다.
+              </p>
+            </div>
+          </FadeUp>
         </div>
 
         <div className="mt-14 grid gap-4 md:grid-cols-3">
@@ -77,17 +83,23 @@ export function HomeWhySection() {
                   />
                 </div>
 
-                <p className="bg-secondary/10 text-primary -ml-1 inline-block rounded-full px-3 pt-1.5 pb-1 text-xs uppercase">
-                  {label}
-                </p>
+                <BounceIn transition={{ delay: 0.2 }}>
+                  <p className="bg-secondary/10 text-primary -ml-1 inline-block rounded-full px-3 pt-1.5 pb-1 text-xs uppercase">
+                    {label}
+                  </p>
+                </BounceIn>
 
-                <h3 className="card-title mt-3">{title}</h3>
+                <FadeUp transition={{ delay: 0.4 }}>
+                  <h3 className="card-title mt-3">{title}</h3>
+                </FadeUp>
 
-                <div className="card-description mt-6">
-                  {description.map((line) => (
-                    <p key={line}>{line}</p>
-                  ))}
-                </div>
+                <FadeUp transition={{ delay: 0.6 }}>
+                  <div className="card-description mt-6">
+                    {description.map((line) => (
+                      <p key={line}>{line}</p>
+                    ))}
+                  </div>
+                </FadeUp>
               </div>
             </article>
           ))}
