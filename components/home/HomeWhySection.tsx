@@ -84,17 +84,17 @@ export function HomeWhySection() {
                 </div>
 
                 <BounceIn transition={{ delay: 0.2 }}>
-                  <p className="bg-secondary/10 text-primary -ml-1 inline-block rounded-full px-3 pt-1.5 pb-1 text-xs uppercase">
+                  <p className="bg-secondary/10 text-primary -ml-1 inline-block rounded-full px-3 pt-1.5 pb-1 text-[10px] uppercase md:text-xs">
                     {label}
                   </p>
                 </BounceIn>
 
                 <FadeUp transition={{ delay: 0.4 }}>
-                  <h3 className="card-title mt-3">{title}</h3>
+                  <h3 className="card-title mt-2 md:mt-3">{title}</h3>
                 </FadeUp>
 
                 <FadeUp transition={{ delay: 0.6 }}>
-                  <div className="card-description mt-6">
+                  <div className="card-description mt-4 md:mt-6">
                     {description.map((line) => (
                       <p key={line}>{line}</p>
                     ))}
