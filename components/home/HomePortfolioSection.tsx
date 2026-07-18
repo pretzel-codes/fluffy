@@ -1,3 +1,3 @@
 export function HomePortfolioSection() {
-  return <section className="h-dvh"></section>;
+  return <section className="h-dvh bg-white"></section>;
 }
