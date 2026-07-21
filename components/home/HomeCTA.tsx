@@ -34,7 +34,7 @@ export function HomeCTA() {
             <BounceIn transition={{ delay: 1.0 }}>
               <button
                 type="button"
-                className="text-primary mt-7 w-full max-w-56 cursor-pointer rounded-md bg-white/95 px-10 py-2.5 text-sm font-semibold shadow-sm transition-colors hover:bg-white md:mt-8 md:w-auto md:max-w-none md:px-12 md:text-base"
+                className="text-primary mt-7 w-full max-w-56 cursor-pointer rounded-full bg-white/95 px-10 py-2.5 text-sm font-semibold shadow-sm transition-colors hover:bg-white md:mt-8 md:w-auto md:max-w-none md:px-12 md:text-base"
               >
                 문의하기
               </button>
