@@ -45,7 +45,7 @@ export function HomePortfolioSection() {
             </p>
           </FadeUp>
 
-          <BounceIn>
+          <BounceIn transition={{ delay: 0.2 }}>
             <Button
               asChild
               size="lg"
@@ -69,7 +69,7 @@ export function HomePortfolioSection() {
                   className="group block"
                 >
                   <article
-                    className="relative isolate aspect-4/5 overflow-hidden rounded-3xl bg-zinc-100"
+                    className="relative isolate aspect-4/5 overflow-hidden rounded-lg bg-zinc-100"
                     style={{
                       boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px',
                     }}
@@ -83,11 +83,7 @@ export function HomePortfolioSection() {
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     ) : (
-                      <div className="absolute inset-0 flex items-center justify-center bg-linear-to-br from-zinc-100 via-zinc-200 to-zinc-300 text-white">
-                        <p className="text-lg font-semibold tracking-[0.14em] text-white/80 uppercase md:text-xl">
-                          Coming soon
-                        </p>
-                      </div>
+                      <div className="absolute inset-0 flex items-center justify-center bg-neutral-200 text-white"></div>
                     )}
 
                     <span className="absolute top-7 right-7 flex items-center justify-center text-white">
@@ -97,15 +93,15 @@ export function HomePortfolioSection() {
                       />
                     </span>
 
-                    <div className="absolute inset-x-0 bottom-0 p-6 text-white md:p-7">
-                      <p className="label text-white/70">{number}</p>
-                      <div className="mt-2 flex items-end justify-between gap-4">
-                        <h3 className="card-title">{title}</h3>
-                        <p className="shrink-0 text-sm font-medium text-white/80 md:text-base">
-                          {date}
-                        </p>
-                      </div>
-                    </div>
+                    {/*<div className="absolute inset-x-0 bottom-0 p-6 text-white md:p-7">*/}
+                    {/*  <p className="label text-white/70">{number}</p>*/}
+                    {/*  <div className="mt-2 flex items-end justify-between gap-4">*/}
+                    {/*    <h3 className="card-title">{title}</h3>*/}
+                    {/*    <p className="shrink-0 text-sm font-medium text-white/80 md:text-base">*/}
+                    {/*      {date}*/}
+                    {/*    </p>*/}
+                    {/*  </div>*/}
+                    {/*</div>*/}
                   </article>
                 </Link>
               </FadeUp>
