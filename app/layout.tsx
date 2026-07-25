@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={`${pretendard.variable} antialiased`}>
-        <div className="flex min-h-screen flex-col bg-zinc-100">
+        <div className="flex min-h-screen flex-col">
           <Header />
           <Body>{children}</Body>
           <Footer />
