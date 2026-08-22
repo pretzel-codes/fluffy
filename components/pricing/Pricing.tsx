@@ -5,7 +5,6 @@ import {
   WrenchIcon,
 } from 'lucide-react';
 import { FadeUp } from '@/components/common';
-import { PricingHero } from '@/components/pricing/PricingHero';
 import { PricingPlan } from '@/components/pricing/PricingPlan';
 
 const commonItems = [
@@ -31,7 +30,6 @@ export function Pricing() {
   return (
     <main className="bg-white">
       <div className="site-width header-offset">
-        <PricingHero />
         <PricingPlan />
       </div>
 
